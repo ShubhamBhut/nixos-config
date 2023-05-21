@@ -8,12 +8,13 @@
       home-manager.inputs.nixpkgs.follows = "nixpkgs";
       ff-addons.url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
       ff-addons.inputs.nixpkgs.follows = "nixpkgs";
+      hyprland.url = "github:hyprwm/Hyprland";
     };
 
   outputs = { nixpkgs, ... }@inputs: {
     nixosConfigurations.arsenal = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
-      modules = [ ./system/arsenal.nix ];
+      modules = [ ./system/arsenal.nix];
     };
     devShell = let
       system = "x86_64-linux";
