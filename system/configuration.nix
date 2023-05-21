@@ -54,6 +54,7 @@
      neovim
      alacritty
      pkgs.mullvad-browser
+     pkgs.nerdfonts
    ];
 
   # Open ports in the firewall.
@@ -82,6 +83,6 @@
     #nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
   };
   boot.initrd.systemd.emergencyAccess = true;
-  
+
 }
 
