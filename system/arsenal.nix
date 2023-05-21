@@ -69,6 +69,7 @@
 
   #hyprland
   programs.hyprland.package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+  programs.hyprland.enable = true;
 
 }
 
