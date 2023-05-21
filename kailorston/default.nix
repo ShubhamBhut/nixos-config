@@ -11,7 +11,6 @@
       ./git.nix
       ./emacs
       ./nvim
-      ./hyprland
     ];
   };
  

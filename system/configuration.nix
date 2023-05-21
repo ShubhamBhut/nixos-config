@@ -82,6 +82,9 @@
     #nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
   };
   boot.initrd.systemd.emergencyAccess = true;
+  
+  #hyprland
+  programs.hyprland.package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
 
 }
 
