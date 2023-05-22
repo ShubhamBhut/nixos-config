@@ -1,0 +1,21 @@
+- [x] nvim
+- [x] hyprland
+- [x] alacritty
+- [] tmux
+- [x] zsh
+- [x] emacs
+- [] firefox
+  - [ ] extensions auto update
+- [] dunst
+- [x] rofi
+- [ ] tldr
+
+- [] warp
+- [x] hardware configuration
+- [x] nerdfonts
+- [ ] fan control
+- [] copy in vim
+- [x] wayland
+
+- [ ] zenpower
+- [ ] tmux in new keybindings
