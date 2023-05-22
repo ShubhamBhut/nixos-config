@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 {
 
-  home.packages = with pkgs; [ wl-clipboard slurp grim rofi brightnessctl ];
+  home.packages = with pkgs; [ wl-clipboard slurp grim rofi brightnessctl mpd light cava];
   
   nixpkgs.overlays = [
     (final: prev: {
@@ -12,6 +12,18 @@
       });
     })
   ];
+xdg.configFile.hypr = {
+    source = ./.;
+    recursive = true; 
+    };
+xdg.configFile.rofi = {
+    source = ./.;
+    recursive = true;
+    };
+xdg.configFile.waybar = {
+    source = ./.;
+    recursive = true;
+    };
 
     # Home-manager waybar config
     programs.waybar = {
@@ -208,8 +220,8 @@
         };
         "backlight" = {
           "device" = "intel_backlight";
-          "on-scroll-up" = "light -A 5";
-          "on-scroll-down" = "light -U 5";
+          "on-scroll-up" = "brightnessctl set +3%";
+          "on-scroll-down" = "brightnessctl set -3%";
           "format" = "{icon} {percent}%";
           "format-icons" = [ "󰃝" "󰃞" "󰃟" "󰃠" ];
         };
