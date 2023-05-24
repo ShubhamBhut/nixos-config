@@ -14,6 +14,7 @@
       ./hyprland
       ./hyprland/neofetch
       ./shell
+      ./vscode.nix
     ];
   };
  
