@@ -1,0 +1,22 @@
+
+window:
+  padding:
+    x: 5
+    y: 5
+
+  opacity: 0.6
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+#colors:
+  #primary:
+    #background: "#083793"
+
+cursor:
+  style:
+    shape: Beam
+
+font:
+  size: 15

@@ -1,4 +1,9 @@
 { pkgs, inputs, ... }: {
+  xdg.configFile.alacritty = {
+    source = ./.;
+    recursive = true;
+  };
+ 
   imports = [ inputs.nix-index-database.hmModules.nix-index ];
   programs.readline = {
     enable = true;
