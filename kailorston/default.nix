@@ -12,6 +12,8 @@
       ./emacs
       ./nvim
       ./hyprland
+      ./hyprland/neofetch
+      ./shell
     ];
   };
  

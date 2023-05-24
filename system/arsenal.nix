@@ -7,6 +7,9 @@
   imports =
     [ (modulesPath + "/installer/scan/not-detected.nix")
       ./configuration.nix
+      inputs.nixos-hardware.nixosModules.common-cpu-amd-pstate
+      inputs.nixos-hardware.nixosModules.common-gpu-amd
+      inputs.nixos-hardware.nixosModules.common-pc-laptop
     ];
 
   fileSystems."/" =
@@ -62,6 +65,7 @@
   hardware = {
     cpu.amd.updateMicrocode = true;
     enableAllFirmware = true;
+    amdgpu.opencl = false;
   };
   console.font = lib.mkForce "${pkgs.terminus_font}/share/consolefonts/ter-u28n.psf.gz";
   environment.systemPackages = with pkgs; [ zenmonitor ryzenadj ];

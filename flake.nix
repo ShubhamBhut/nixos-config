@@ -8,6 +8,8 @@
       home-manager.inputs.nixpkgs.follows = "nixpkgs";
       ff-addons.url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
       ff-addons.inputs.nixpkgs.follows = "nixpkgs";
+      nix-index-database.url = "github:Mic92/nix-index-database";
+      nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
       hyprland.url = "github:hyprwm/Hyprland";
     };
 

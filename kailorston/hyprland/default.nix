@@ -220,8 +220,8 @@ xdg.configFile.waybar = {
         };
         "backlight" = {
           "device" = "intel_backlight";
-          "on-scroll-up" = "brightnessctl set +3%";
-          "on-scroll-down" = "brightnessctl set -3%";
+          "on-scroll-up" = "brightnessctl set +2%";
+          "on-scroll-down" = "brightnessctl set 2%-";
           "format" = "{icon} {percent}%";
           "format-icons" = [ "󰃝" "󰃞" "󰃟" "󰃠" ];
         };
