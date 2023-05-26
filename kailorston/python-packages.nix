@@ -12,4 +12,5 @@ pkgs.python311.withPackages (p: with p; [
   pwntools
   requests # HTTP library
   setuptools # setup.py
+  neo4j
 ])
