@@ -30,7 +30,6 @@
     shellAliases = {
       "j" = "just";
       "ls" = "exa";
-      "sudo" = "doas";
     };
     interactiveShellInit = ''
       export DIRENV_LOG_FORMAT=""

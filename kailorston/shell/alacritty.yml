@@ -20,3 +20,5 @@ cursor:
 
 font:
   size: 15
+
+shell: tmux
