@@ -52,8 +52,6 @@
      wget
      firefox
      neovim
-     alacritty
-     pkgs.mullvad-browser
      pkgs.nerdfonts
    ];
 
