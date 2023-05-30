@@ -19,16 +19,8 @@
       "enable-bracketed-paste" = "on";
     };
   };
-  programs.alacritty = {
-    enable = true;
-    settings = {
-      font = {
-        size = 12 / 1.5;
-        normal.family = "Roboto Mono";
-      };
-      shell = "tmux";
-    };
-    };
+  programs.alacritty.enable = true;
+  programs.alacritty.settings.shell = "tmux";
   programs.fish = {
     enable = true;
     functions = {
