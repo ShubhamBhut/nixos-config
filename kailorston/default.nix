@@ -16,6 +16,7 @@
       ./shell
       ./vscode.nix
       ./hyprland/hyprpaper
+      ./hyprland/waybar
     ];
   };
  
