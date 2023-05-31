@@ -10,7 +10,7 @@
   ];
   programs.helix.enable = true;
   programs.helix.settings = {
-    theme = "github_dark";
+    theme = "dracula_at_night";
     keys.insert.F9 = "normal_mode";
     keys.normal.a = "code_action";
     keys.normal.space.s = ":write";
