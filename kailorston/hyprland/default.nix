@@ -11,10 +11,6 @@ xdg.configFile.rofi = {
     source = ./rofi;
     recursive = true;
     };
-xdg.configFile.waybar = {
-    source = ./waybar;
-    recursive = true;
-    };
 xdg.configFile.hyprpaper = {
     source = ./hyprpaper;
     recursive = true;

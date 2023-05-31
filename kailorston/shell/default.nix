@@ -3,6 +3,7 @@
     source = ./.;
     recursive = true;
   };
+  programs.zoxide.enable = true;
  
   imports = [ inputs.nix-index-database.hmModules.nix-index ];
   programs.readline = {

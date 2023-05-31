@@ -12,6 +12,10 @@
       });
     })
   ];
+  xdg.configFile.waybar = {
+    source = ./.;
+    recursive = true;
+    };
     # Home-manager waybar config
     programs.waybar = {
       enable = true;
