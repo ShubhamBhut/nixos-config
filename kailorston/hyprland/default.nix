@@ -13,15 +13,19 @@
     })
   ];
 xdg.configFile.hypr = {
-    source = ./.;
+    source = ./hypr;
     recursive = true; 
     };
 xdg.configFile.rofi = {
-    source = ./.;
+    source = ./rofi;
     recursive = true;
     };
 xdg.configFile.waybar = {
-    source = ./.;
+    source = ./waybar;
+    recursive = true;
+    };
+xdg.configFile.hyprpaper = {
+    source = ./hyprpaper;
     recursive = true;
     };
 
