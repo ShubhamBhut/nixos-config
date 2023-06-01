@@ -4,6 +4,13 @@ vim.opt.relativenumber = true
 
 --colorscheme
 vim.cmd[[colorscheme dracula]]
+vim.o.termguicolors = true
+
+-- Autocmd to apply "ColorizerToggle" command
+vim.cmd([[
+  autocmd VimEnter * ColorizerToggle
+]])
+
 
 vim.cmd([[
 let g:mapleader = "\<Space>"

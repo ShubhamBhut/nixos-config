@@ -15,7 +15,7 @@ return {
          { '<Leader>b', '<cmd>Telescope buffers<cr>' },
          { '<Leader>F', '<cmd>Telescope frecency<cr>' },
          { '<Leader>sc', '<cmd>Telescope live_grep<cr>' },
-         { '<Leader>f', '<cmd>Telescope find_files'}
+         { '<Leader>f', '<cmd>Telescope find_files<cr>'}
       },
       config = function()
          require('telescope').load_extension 'frecency'
