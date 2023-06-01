@@ -8,6 +8,7 @@
       esbenp.prettier-vscode
       matklad.rust-analyzer
       ms-pyright.pyright
+      ms-toolsai.jupyter
     ];
   };
 }

@@ -11,6 +11,9 @@ vim.cmd([[
   autocmd VimEnter * ColorizerToggle
 ]])
 
+-- keybindings
+vim.api.nvim_set_keymap('i', 'jj', '<ESC>', { noremap = true })
+vim.api.nvim_buf_set_keymap(0, 'i', 'qq', ':=', {noremap = true, silent = true})
 
 vim.cmd([[
 let g:mapleader = "\<Space>"

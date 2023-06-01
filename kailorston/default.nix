@@ -17,6 +17,7 @@
       ./vscode.nix
       ./hyprland/hyprpaper
       ./hyprland/waybar
+      ./browser
     ];
   };
  
