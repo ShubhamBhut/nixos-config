@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }: {
+{ pkgs, inputs, lib, ... }: {
   xdg.configFile.alacritty = {
     source = ./.;
     recursive = true;
@@ -38,7 +38,7 @@
   };
   programs.nix-index = {
     enable = true;
-  };
+ };
   programs.tmux = {
     enable = true;
     baseIndex = 1;
@@ -51,6 +51,17 @@
   };
   programs.starship = {
     enable = true;
+    settings = {
+      format = lib.strings.concatStrings [
+        "$directory"
+        "$git_branch"
+        "$nix_shell"
+        "$cmd_duration"
+        "$status"
+        "\n$character"
+      ];
+      nix_shell.format = "[$symbol](blue)";
+  };
   };
   home.packages = with pkgs; [
     bashInteractive
