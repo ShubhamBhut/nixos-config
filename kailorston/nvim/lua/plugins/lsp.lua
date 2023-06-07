@@ -20,7 +20,15 @@ return {
          -- cfg.tsserver.setup {
          --    single_file_support = false,
          -- }
-         cfg.pyright.setup {}
+         cfg.pyright.setup {
+            single_file_support = true,
+         }
+         cfg.tsserver.setup {}
+         cfg.emmet_ls.setup {}
+         cfg.lua_ls.setup {}
+         cfg.ols.setup {}
+         cfg.yamlls.setup {}
+         cfg.solidity_ls.setup {}
          -- cfg.lua_ls.setup {}
          -- cfg.nil_ls.setup {}
          -- cfg.denols.setup {}
