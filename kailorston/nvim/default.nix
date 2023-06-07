@@ -8,5 +8,5 @@
     source = ./.;
     recursive = true;
   };
-  home.packages = [pkgs.rust-analyzer pkgs.nodePackages.pyright];
+  home.packages = [pkgs.rust-analyzer pkgs.nodePackages.pyright pkgs.vimPlugins.emmet-vim pkgs.nodePackages_latest.typescript-language-server];
   }
