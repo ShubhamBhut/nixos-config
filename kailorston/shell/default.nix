@@ -4,6 +4,8 @@
     recursive = true;
   };
   programs.zoxide.enable = true;
+
+  programs.kitty.enable = true;
  
   imports = [ inputs.nix-index-database.hmModules.nix-index ];
   programs.readline = {

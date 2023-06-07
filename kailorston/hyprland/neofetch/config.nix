@@ -71,7 +71,7 @@
   memory_display="off"
   battery_display="off"
   disk_display="off"
-  image_backend="alacritty"
+  image_backend="kitty"
   # image_source="${./sakurafetch.png}"
   image_source="${./nixgirl.png}"
   ascii_distro="auto"
