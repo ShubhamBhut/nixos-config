@@ -1,4 +1,4 @@
-{ ... }: {
+{ pkgs, ... }: {
   programs.neovim = {
     enable = true;
     defaultEditor = true;
@@ -8,4 +8,5 @@
     source = ./.;
     recursive = true;
   };
+  home.packages = [pkgs.rust-analyzer pkgs.nodePackages.pyright];
   }

@@ -1,12 +1,6 @@
 vim.diagnostic.config { signs = false }
 return {
    {
-      'williamboman/mason.nvim',
-      enabled = false;
-      opts = {},
-      cmd = "Mason",
-   },
-   {
       'neovim/nvim-lspconfig',
       keys = {
          { 'xx', vim.lsp.buf.code_action, mode = { 'n', 'x' } },
@@ -26,7 +20,7 @@ return {
          -- cfg.tsserver.setup {
          --    single_file_support = false,
          -- }
-         -- cfg.pyright.setup {}
+         cfg.pyright.setup {}
          -- cfg.lua_ls.setup {}
          -- cfg.nil_ls.setup {}
          -- cfg.denols.setup {}
@@ -36,7 +30,7 @@ return {
    {
       'simrat39/rust-tools.nvim',
       event = "BufReadPre *.rs",
-      enabled = false;
+      enabled = ture;
       keys = {
          { 'gu', function() require('rust-tools').parent_module.parent_module() end }
       },

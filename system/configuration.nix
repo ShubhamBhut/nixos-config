@@ -8,6 +8,7 @@
   imports =
     [ 
 	../kailorston	
+  ./nix.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
