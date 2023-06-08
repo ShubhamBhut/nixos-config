@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 {
 
-  home.packages = with pkgs; [ wl-clipboard slurp grim rofi brightnessctl mpd light cava];
+  home.packages = with pkgs; [ wl-clipboard slurp grim rofi brightnessctl mpd light cava hyprpaper];
   
 xdg.configFile.hypr = {
     source = ./hypr;
@@ -9,10 +9,6 @@ xdg.configFile.hypr = {
     };
 xdg.configFile.rofi = {
     source = ./rofi;
-    recursive = true;
-    };
-xdg.configFile.hyprpaper = {
-    source = ./hyprpaper;
     recursive = true;
     };
 }
