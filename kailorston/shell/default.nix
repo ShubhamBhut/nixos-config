@@ -61,6 +61,7 @@
       format = "$directory$git_branch$git_commit$character";
       right_format = lib.strings.concatStrings [
         "$cmd_duration"
+        "$nix_shell"
       ];
       git_branch.format = "\\([$branch](purple)\\) ";
       git_commit.format = "\\([$hash](purple)\\) ";
