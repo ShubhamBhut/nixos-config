@@ -3,9 +3,13 @@
     source = ./.;
     recursive = true;
   };
+  xdg.configFile.kitty = {
+    source = ./.;
+    recursive = true;
+  };
   programs.zoxide.enable = true;
-
   programs.kitty.enable = true;
+  programs.kitty.settings.shell = "${pkgs.fish}/bin/fish";
  
   imports = [ inputs.nix-index-database.hmModules.nix-index ];
   programs.readline = {
@@ -47,23 +51,26 @@
     mouse = true;
     historyLimit = 50000;
     sensibleOnTop = false;
-    terminal = "alacritty";
+    terminal = "kitty";
     shell = "${pkgs.fish}/bin/fish";
     extraConfig = builtins.readFile ./tmux.conf;
   };
   programs.starship = {
     enable = true;
     settings = {
-      format = lib.strings.concatStrings [
-        "$directory"
-        "$git_branch"
-        "$nix_shell"
+      format = "$directory$git_branch$git_commit$character";
+      right_format = lib.strings.concatStrings [
         "$cmd_duration"
-        "$status"
-        "\n$character"
       ];
+      git_branch.format = "\\([$branch](purple)\\) ";
+      git_commit.format = "\\([$hash](purple)\\) ";
+      character = {
+        success_symbol = "[λ](yellow)";
+        error_symbol = "[λ](red)";
+      };
+      directory.style = "cyan";
       nix_shell.format = "[$symbol](blue)";
-  };
+    };
   };
   home.packages = with pkgs; [
     bashInteractive

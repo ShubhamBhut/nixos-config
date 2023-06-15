@@ -1,4 +1,4 @@
-{ inputs, ... }: {
+{ inputs, pkgs, ... }: {
   imports = [ inputs.home-manager.nixosModules.home-manager ];
   home-manager.extraSpecialArgs = { inherit inputs; };
   home-manager.useGlobalPkgs = true;
@@ -18,6 +18,8 @@
       ./hyprland/waybar
       ./browser
     ];
+    home.packages = [ (pkgs.callPackage ./thunderbird-daily.nix {}) ];
+
   };
  
 }
