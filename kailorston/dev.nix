@@ -7,6 +7,7 @@
     rustc
     cargo
     (import ./python-packages.nix { pkgs = pkgs; })
+    pkgs.nodePackages.live-server
   ];
   programs.helix.enable = true;
   programs.helix.settings = {

@@ -22,6 +22,7 @@ let g:mapleader = "\<Space>"
 nnoremap <Space> <Nop>
 ]])
 
+--Lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
@@ -53,10 +54,15 @@ require("lazy").setup("plugins", {
 	},
 })
 
+--colorscheme settings 
 local dracula = require("dracula")
 dracula.setup({
   transparent_bg = true, -- default false
   }
 )
+vim.g.nord_disable_background = true
+require('rose-pine').setup({
+	disable_background = true
+})
 
-vim.cmd[[colorscheme dracula]]
+vim.cmd[[colorscheme rose-pine]]

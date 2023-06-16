@@ -29,6 +29,9 @@ return {
       opts = {},
    },
    {
+      'mattn/emmet-vim'
+   },
+   {
       'norcalli/nvim-colorizer.lua',
       opts = {},
    },

@@ -7,8 +7,14 @@
     source = ./.;
     recursive = true;
   };
+  xdg.configFile.current-theme = {
+    source = ./.;
+    recursive = true;
+  };
   programs.zoxide.enable = true;
-  programs.kitty.enable = true;
+  programs.kitty = {
+    enable = true;
+  };
   programs.kitty.settings.shell = "${pkgs.fish}/bin/fish";
  
   imports = [ inputs.nix-index-database.hmModules.nix-index ];
