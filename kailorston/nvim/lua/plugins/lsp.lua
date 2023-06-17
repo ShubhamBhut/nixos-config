@@ -1,6 +1,9 @@
 vim.diagnostic.config { signs = false }
 return {
    {
+      'dcampos/nvim-snippy',
+   },
+   {
       'neovim/nvim-lspconfig',
       keys = {
          { 'xx', vim.lsp.buf.code_action, mode = { 'n', 'x' } },
@@ -29,6 +32,9 @@ return {
          cfg.ols.setup {}
          cfg.yamlls.setup {}
          cfg.solidity_ls.setup {}
+         cfg.html.setup{
+            single_file_support = true,
+         }
          -- cfg.lua_ls.setup {}
          -- cfg.nil_ls.setup {}
          -- cfg.denols.setup {}

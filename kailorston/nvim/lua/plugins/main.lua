@@ -67,9 +67,13 @@ return {
       "nvim-neo-tree/neo-tree.nvim",
       version = "v2.x",
       cmd = 'Neotree',
+      config = function(_, opts)
+      vim.keymap.set('n', '<leader>t', ':Neotree toggle<CR>', { noremap = true, silent = true })
+      end,
       dependencies = {
          "nvim-lua/plenary.nvim",
          "MunifTanjim/nui.nvim",
       }
+      
    }
 }

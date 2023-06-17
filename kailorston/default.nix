@@ -17,6 +17,7 @@
       ./vscode.nix
       ./hyprland/waybar
       ./browser
+      ./others.nix
     ];
     home.packages = [ (pkgs.callPackage ./thunderbird-daily.nix {}) ];
 

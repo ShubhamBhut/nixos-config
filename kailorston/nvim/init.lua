@@ -11,7 +11,13 @@ vim.cmd([[
 ]])
 
 --LSP
+--Enable (broadcasting) snippet capability for completion
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
+require'lspconfig'.html.setup {
+  capabilities = capabilities,
+}
 
 -- keybindings
 vim.api.nvim_set_keymap('i', 'jj', '<ESC>', { noremap = true })
