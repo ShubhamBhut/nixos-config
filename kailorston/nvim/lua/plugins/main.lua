@@ -68,7 +68,7 @@ return {
       version = "v2.x",
       cmd = 'Neotree',
       config = function(_, opts)
-      vim.keymap.set('n', '<leader>t', ':Neotree toggle<CR>', { noremap = true, silent = true })
+      vim.keymap.set('n', '<leader>t', ':Neotree toggle<CR>')
       end,
       dependencies = {
          "nvim-lua/plenary.nvim",

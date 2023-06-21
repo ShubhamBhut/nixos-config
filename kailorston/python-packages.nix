@@ -13,4 +13,8 @@ pkgs.python311.withPackages (p: with p; [
   requests # HTTP library
   setuptools # setup.py
   neo4j
+  psycopg2
+  pygraphviz
+  python-dotenv
+  mysql-connector
 ])
