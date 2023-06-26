@@ -68,6 +68,7 @@
   extensions = with ff-addons; [
     stylus
     ublock-origin
+    vimfx
   ];
 
   settings = {

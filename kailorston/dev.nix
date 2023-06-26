@@ -3,6 +3,7 @@
 
   home.packages = with pkgs; [
     gcc
+    clang-tools
     gdb
     rustc
     cargo

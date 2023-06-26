@@ -100,6 +100,22 @@
         "type": "github"
       }
     },
+    "legacy-fox": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1664556584,
+        "narHash": "sha256-b6tl0z4wJCtYPUHxDz7F3jX97TpdHt6dcKzMKP6O1A8=",
+        "owner": "girst",
+        "repo": "LegacyFox-mirror-of-git.gir.st",
+        "rev": "c2ebaa3a942180370e9318661ceacf4bae55560c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "girst",
+        "repo": "LegacyFox-mirror-of-git.gir.st",
+        "type": "github"
+      }
+    },
     "nix-index-database": {
       "inputs": {
         "nixpkgs": [
@@ -172,6 +188,7 @@
         "ff-addons": "ff-addons",
         "home-manager": "home-manager",
         "hyprland": "hyprland",
+        "legacy-fox": "legacy-fox",
         "nix-index-database": "nix-index-database",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_2"

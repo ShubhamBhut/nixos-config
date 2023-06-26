@@ -1,17 +1,16 @@
 { pkgs, inputs, ... }:
 let
-  # system = "x86_64-linux";
-  # ff-addons = inputs.ff-addons.packages.${system};
-  profiles = {
-    main = import ./profile-main.nix {
-      inherit pkgs;
-      ff-addons = inputs.ff-addons.packages.${pkgs.system};
-    };
+  firefox = pkgs.callPackage ./legacy-fox.nix { inherit inputs; };
+  ff-addons = import ./addons.nix {
+    ff-addons = inputs.ff-addons.packages.${pkgs.system};
+    inherit (inputs.ff-addons.lib.${pkgs.system}) buildFirefoxXpiAddon;
   };
+  profile = import ./profile-main.nix { inherit pkgs ff-addons; };
 in
 {
   programs.firefox = {
     enable = true;
-    profiles = profiles;
+    package = firefox;
+    profiles.main = profile;
   };
 }

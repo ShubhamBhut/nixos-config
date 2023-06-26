@@ -11,6 +11,7 @@
       nix-index-database.url = "github:Mic92/nix-index-database";
       nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
       hyprland.url = "github:hyprwm/Hyprland";
+      legacy-fox = { url = "github:girst/LegacyFox-mirror-of-git.gir.st"; flake = false; };
     };
 
   outputs = { nixpkgs, ... }@inputs: {

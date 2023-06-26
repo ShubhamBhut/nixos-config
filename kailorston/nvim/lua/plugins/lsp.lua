@@ -26,6 +26,9 @@ return {
          cfg.pyright.setup {
             single_file_support = true,
          }
+         cfg.clangd.setup{
+            single_file_support = true,
+         }
          cfg.tsserver.setup {}
          cfg.emmet_ls.setup {}
          cfg.lua_ls.setup {}
