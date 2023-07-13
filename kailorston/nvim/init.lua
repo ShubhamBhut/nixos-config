@@ -23,6 +23,9 @@ require'lspconfig'.html.setup {
 vim.api.nvim_set_keymap('i', 'jj', '<ESC>', { noremap = true })
 vim.api.nvim_buf_set_keymap(0, 'i', 'qq', ':=', {noremap = true, silent = true})
 
+--c++ keybind
+vim.api.nvim_set_keymap("n", "rcp", ":!g++ % && ./a.out<CR>", { silent = true })
+
 vim.cmd([[
 let g:mapleader = "\<Space>"
 nnoremap <Space> <Nop>
