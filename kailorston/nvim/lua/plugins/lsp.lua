@@ -29,7 +29,9 @@ return {
          cfg.clangd.setup{
             single_file_support = true,
          }
-         cfg.tsserver.setup {}
+         cfg.tsserver.setup {
+                        single_file_support = true,
+         }
          cfg.emmet_ls.setup {}
          cfg.lua_ls.setup {}
          cfg.ols.setup {}
@@ -41,7 +43,7 @@ return {
          -- cfg.lua_ls.setup {}
          -- cfg.nil_ls.setup {}
          -- cfg.denols.setup {}
-         -- cfg.svelte.setup {}
+         cfg.svelte.setup {}
       end,
    },
    {
