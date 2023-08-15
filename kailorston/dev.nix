@@ -9,6 +9,8 @@
     cargo
     (import ./python-packages.nix { pkgs = pkgs; })
     pkgs.nodePackages.live-server
+    nodejs_20
+    typescript
   ];
   programs.helix.enable = true;
   programs.helix.settings = {
