@@ -54,6 +54,7 @@
      firefox
      neovim
      pkgs.nerdfonts
+     (pkgs.callPackage ./pkgs/dellg5-fan.nix {})
    ];
 
   # Open ports in the firewall.

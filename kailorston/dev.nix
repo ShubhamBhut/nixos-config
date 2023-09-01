@@ -10,6 +10,8 @@
     (import ./python-packages.nix { pkgs = pkgs; })
     pkgs.nodePackages.live-server
     nodejs_20
+    yarn
+    pkgs.nodePackages.svelte-language-server
     typescript
   ];
   programs.helix.enable = true;
