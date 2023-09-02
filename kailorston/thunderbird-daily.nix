@@ -58,7 +58,7 @@
 }:
 
 let
-  version = "116.0a1";
+  version = "118.0a1";
   mozillaPlatforms = {
     i686-linux = "linux-i686";
     x86_64-linux = "linux-x86_64";
@@ -74,9 +74,8 @@ stdenv.mkDerivation {
   inherit version;
 
   src = fetchurl {
-    url = 
-      "https://ftp.mozilla.org/pub/thunderbird/nightly/2023/06/2023-06-09-10-03-01-comm-central-l10n/thunderbird-116.0a1.en-GB.linux-x86_64.tar.bz2";
-    sha256 = "sha256-Y/MjC7fQt6tDWZevKnQUbdmAPMc7dLIWf9foTgHXi88=";
+    url = "https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central/thunderbird-118.0a1.en-US.linux-x86_64.tar.bz2";
+    sha256 = "sha256-DA/0O40RKYDy+SXEbJ84gAZ4Fbu4BxbQoJqVI5MXHJU=";
   };
 
   libPath = lib.makeLibraryPath

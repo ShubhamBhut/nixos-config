@@ -51,7 +51,7 @@
    environment.systemPackages = with pkgs; [
      vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
      wget
-     firefox
+     firefox-esr
      neovim
      pkgs.nerdfonts
      (pkgs.callPackage ./pkgs/dellg5-fan.nix {})
@@ -83,6 +83,12 @@
     #nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
   };
   boot.initrd.systemd.emergencyAccess = true;
+
+    boot.kernelPatches = [{
+    name = "amdgpu-freezes";
+    patch = ./amdgpu-freezes.patch;
+  }];
+
 
 }
 
