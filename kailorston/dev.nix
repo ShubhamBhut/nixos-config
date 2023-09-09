@@ -13,6 +13,7 @@
     yarn
     pkgs.nodePackages.svelte-language-server
     typescript
+    poetry
   ];
   programs.helix.enable = true;
   programs.helix.settings = {
