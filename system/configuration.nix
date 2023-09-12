@@ -9,6 +9,7 @@
     [ 
 	../kailorston	
   ./nix.nix
+  ../system/network
     ];
 
   # Use the systemd-boot EFI boot loader.

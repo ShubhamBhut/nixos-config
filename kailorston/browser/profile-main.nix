@@ -3,7 +3,12 @@
   # isDefault = true;
   userChrome = builtins.readFile ./userChrome.css;
   search = {
-    default = "DuckDuckGo";
+    default = "kagi";
+    engines.kagi = {
+      urls = [
+        {template = "https://kagi.com/search?q={searchTerms}";}
+      ];
+    };
     engines = {
       "Bing".metaData.hidden = true;
       "Google".metaData.alias = "g";
