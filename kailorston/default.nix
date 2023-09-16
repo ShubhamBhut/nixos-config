@@ -18,6 +18,7 @@
       ./hyprland/waybar
       ./browser
       ./others.nix
+      ./pentesting.nix
     ];
     home.packages = [ (pkgs.callPackage ./thunderbird-daily.nix {}) ];
 
