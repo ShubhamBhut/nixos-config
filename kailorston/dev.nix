@@ -14,6 +14,7 @@
     pkgs.nodePackages.svelte-language-server
     typescript
     poetry
+    steam-run
   ];
   programs.helix.enable = true;
   programs.helix.settings = {

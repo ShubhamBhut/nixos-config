@@ -6,5 +6,6 @@
   pkgs.tor
   pkgs.tor-browser-bundle-bin
   pkgs.jdk
+  pkgs.unzip
   ];
 }
