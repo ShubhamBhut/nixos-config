@@ -28,7 +28,7 @@
                  font-family: "JetBrainsMono Nerd Font";
                  font-size: 12pt;
                  font-weight: bold;
-                 border-radius: 0px;
+                 border-radius: 5px;
                  transition-property: background-color;
                  transition-duration: 0.5s;
                }
@@ -49,8 +49,8 @@
                  background-color: transparent;
                }
                window > box {
-                 margin-left: 5px;
-                 margin-right: 5px;
+                 margin-left: 15px;
+                 margin-right: 15px;
                  margin-top: 5px;
                  background-color: rgb(30, 30, 46);
                }
