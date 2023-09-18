@@ -8,5 +8,6 @@
   pkgs.jdk
   pkgs.unzip
   pkgs.brave
+  pkgs.killall
   ];
 }
