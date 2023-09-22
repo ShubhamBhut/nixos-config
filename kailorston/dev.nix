@@ -15,6 +15,7 @@
     typescript
     poetry
     steam-run
+    bitcoind
   ];
   programs.helix.enable = true;
   programs.helix.settings = {

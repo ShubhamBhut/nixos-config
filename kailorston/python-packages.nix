@@ -1,6 +1,7 @@
 { pkgs }:
 
 pkgs.python311.withPackages (p: with p; [
+  pip 
   aiohttp # async HTTP
   beautifulsoup4 # web scraping
   ipython # interactive shell
@@ -17,4 +18,6 @@ pkgs.python311.withPackages (p: with p; [
   pygraphviz
   python-dotenv
   mysql-connector
+  pyrituals
+  black
 ])
