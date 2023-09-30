@@ -11,6 +11,7 @@ return {
          { 'xr', vim.lsp.buf.rename },
          { 'gd', vim.lsp.buf.definition },
          { 'gt', vim.lsp.buf.type_definition },
+         { '<space>d', vim.lsp.buf.hover},
          { 'gi', '<cmd>Telescope lsp_implementations<cr>' },
          { 'gr', '<cmd>Telescope lsp_references<cr>' },
          { 'g<space>', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>' },
@@ -40,7 +41,6 @@ return {
          cfg.html.setup{
             single_file_support = true,
          }
-         -- cfg.lua_ls.setup {}
          -- cfg.nil_ls.setup {}
          -- cfg.denols.setup {}
          cfg.svelte.setup {}
@@ -51,7 +51,7 @@ return {
       event = "BufReadPre *.rs",
       enabled = ture;
       keys = {
-         { 'gu', function() require('rust-tools').parent_module.parent_module() end }
+         { 'pm', function() require('rust-tools').parent_module.parent_module() end }
       },
       config = function()
          local caps = require('cmp_nvim_lsp').default_capabilities()

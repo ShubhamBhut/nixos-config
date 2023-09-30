@@ -20,8 +20,18 @@ require'lspconfig'.html.setup {
 }
 
 -- keybindings
+
+-- quick normal mode
 vim.api.nvim_set_keymap('i', 'jj', '<ESC>', { noremap = true })
+-- shortcut for go and odin languages
 vim.api.nvim_buf_set_keymap(0, 'i', 'qq', ':=', {noremap = true, silent = true})
+-- go to beginning and end of lines 
+vim.api.nvim_set_keymap('n', 'el', '$', {noremap = true})
+vim.api.nvim_set_keymap('n', 'bl', '0', {noremap = true})
+-- change windows
+vim.api.nvim_set_keymap('n', '<leader>w', '<C-W>w', {noremap = true})
+-- change case
+vim.api.nvim_set_keymap('n', 'cc', '~', {noremap = true})
 
 --c++ keybind
 vim.api.nvim_set_keymap("n", "rcp", ":!g++ % && ./a.out<CR>", { silent = true })

@@ -32,6 +32,9 @@ return {
       'mattn/emmet-vim'
    },
    {
+      'ThePrimeagen/vim-be-good'
+   },
+   {
       'norcalli/nvim-colorizer.lua',
       opts = {},
    },

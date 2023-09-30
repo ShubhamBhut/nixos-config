@@ -19,6 +19,7 @@
       ./browser
       ./others.nix
       ./pentesting
+      ./keepassxc.nix
     ];
     home.packages = [ (pkgs.callPackage ./thunderbird-daily.nix {}) ];
 
