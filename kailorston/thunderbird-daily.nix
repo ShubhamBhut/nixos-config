@@ -74,8 +74,8 @@ stdenv.mkDerivation {
   inherit version;
 
   src = fetchurl {
-    url = "https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central/thunderbird-118.0a1.en-US.linux-x86_64.tar.bz2";
-    sha256 = "sha256-DA/0O40RKYDy+SXEbJ84gAZ4Fbu4BxbQoJqVI5MXHJU=";
+    url = "https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central/thunderbird-120.0a1.en-US.linux-x86_64.tar.bz2";
+    sha256 = "sha256-4X7PGjrcjTz689pyPl4+VV+4q8Kiw+Ys0aQxfMehC78=";
   };
 
   libPath = lib.makeLibraryPath

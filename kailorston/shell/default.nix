@@ -86,7 +86,7 @@
     bashInteractive
     bat
     du-dust
-    exa
+    eza
     file
     fd
     just
