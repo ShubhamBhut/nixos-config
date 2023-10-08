@@ -8,6 +8,7 @@
     rustc
     cargo
     rustfmt
+    clippy
     (import ./python-packages.nix { pkgs = pkgs; })
     pkgs.nodePackages.live-server
     nodejs_20
