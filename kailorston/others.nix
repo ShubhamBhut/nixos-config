@@ -9,5 +9,6 @@
   pkgs.unzip
   pkgs.brave
   pkgs.killall
+  pkgs.exercism
   ];
 }

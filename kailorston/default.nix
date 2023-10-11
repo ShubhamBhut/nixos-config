@@ -9,7 +9,6 @@
     imports = [
       ./dev.nix
       ./git.nix
-      ./emacs
       ./nvim
       ./hyprland
       ./hyprland/neofetch
@@ -21,7 +20,8 @@
       ./pentesting
       ./keepassxc.nix
     ];
-    home.packages = [ (pkgs.callPackage ./thunderbird-daily.nix {}) ];
+    # home.packages = [ (pkgs.callPackage ./thunderbird-daily.nix {}) ];
+    home.packages = [ (pkgs.callPackage ./magit {}) pkgs.thunderbird ];
 
   };
  
