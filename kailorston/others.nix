@@ -10,5 +10,6 @@
   pkgs.brave
   pkgs.killall
   pkgs.exercism
+  pkgs.scc
   ];
 }

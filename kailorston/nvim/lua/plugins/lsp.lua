@@ -34,7 +34,9 @@ return {
                         single_file_support = true,
          }
          cfg.emmet_ls.setup {}
-         cfg.lua_ls.setup {}
+         cfg.lua_ls.setup {
+            single_file_support = true,
+         }
          cfg.ols.setup {}
          cfg.yamlls.setup {}
          cfg.solidity_ls.setup {}

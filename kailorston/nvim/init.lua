@@ -41,6 +41,10 @@ let g:mapleader = "\<Space>"
 nnoremap <Space> <Nop>
 ]])
 
+--Debug
+-- Open the UI elements automatically when a debugging session starts
+vim.api.nvim_set_keymap('n', '<leader>du', '<cmd>lua require"dapui".toggle()<CR>', { noremap = true })
+
 --Lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then

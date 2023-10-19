@@ -20,4 +20,5 @@ pkgs.python311.withPackages (p: with p; [
   mysql-connector
   pyrituals
   black
+  debugpy
 ])
