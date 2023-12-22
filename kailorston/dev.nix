@@ -8,7 +8,6 @@
     rustc
     cargo
     rustfmt
-    lldb
     clippy
     (import ./python-packages.nix { pkgs = pkgs; })
     pkgs.nodePackages.live-server

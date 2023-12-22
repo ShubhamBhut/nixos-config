@@ -18,7 +18,7 @@ return {
       },
       event = "BufEnter",
       config = function()
-         local cfg = require 'lspconfig'
+         local cfg = require('lspconfig')
          -- cfg.clangd.setup {}
          cfg.rust_analyzer.setup {}
          -- cfg.tsserver.setup {

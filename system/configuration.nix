@@ -10,6 +10,7 @@
 	../kailorston	
   ./nix.nix
   ../system/network
+  ../system/battery_saver.nix
     ];
 
   # Use the systemd-boot EFI boot loader.

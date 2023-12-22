@@ -11,28 +11,18 @@
       inputs.nixos-hardware.nixosModules.common-gpu-amd
       inputs.nixos-hardware.nixosModules.common-pc-laptop
     ];
-
-  fileSystems."/" =
-    { device = "rpool/system/root";
+    fileSystems."/" =
+    { device = "rpool/nixos";
       fsType = "zfs";
     };
 
-  fileSystems."/nix" =
-    { device = "rpool/nix";
+  fileSystems."/data" =
+    { device = "rpool/data";
       fsType = "zfs";
     };
 
-  fileSystems."/home" =
-    { device = "rpool/user";
-      fsType = "zfs";
-    };
-
-  fileSystems."/var/cache" =
-    { device = "rpool/cache";
-      fsType = "zfs";
-    };
   fileSystems."/boot" =
-    { device = "/dev/nvme0n1p7";
+    { device = "/dev/nvme0n1p6";
       fsType = "vfat";
     };
 
@@ -56,12 +46,6 @@
     supportedFilesystems = [ "zfs" ];
     initrd.availableKernelModules = [ "nvme" "xhci_pci" ];
     initrd.systemd.enable = true;
-    initrd.luks.devices.crypted = {
-      header = "/dev/nvme0n1p5";
-      device = "/dev/nvme0n1p6";
-      bypassWorkqueues = true;
-    };
-    zfs.devNodes = "/dev/mapper/crypted";
   };
   hardware = {
     cpu.amd.updateMicrocode = true;
