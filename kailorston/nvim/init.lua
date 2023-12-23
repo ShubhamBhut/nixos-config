@@ -10,6 +10,7 @@ vim.cmd([[
   autocmd VimEnter * ColorizerToggle
 ]])
 
+
 --LSP
 
 -- keybindings
@@ -37,6 +38,8 @@ nnoremap <Space> <Nop>
 --Debug
 -- Open the UI elements automatically when a debugging session starts
 vim.api.nvim_set_keymap('n', '<leader>du', '<cmd>lua require"dapui".toggle()<CR>', { noremap = true })
+-- Transparent background
+vim.api.nvim_set_keymap('n', '<leader>bg', ':hi Normal guibg=NONE ctermbg=NONE<CR>', { noremap = true, silent = true })
 
 --Lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -69,6 +72,8 @@ require("lazy").setup("plugins", {
 		},
 	},
 })
+
+--background transparency toggle
 
 --colorscheme settings 
 local dracula = require("dracula")
