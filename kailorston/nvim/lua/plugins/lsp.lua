@@ -6,14 +6,14 @@ return {
    {
       'neovim/nvim-lspconfig',
       keys = {
-         { 'xx', vim.lsp.buf.code_action, mode = { 'n', 'x' } },
-         { 'xf', vim.lsp.buf.format },
-         { 'xr', vim.lsp.buf.rename },
-         { 'gd', vim.lsp.buf.definition },
-         { 'gt', vim.lsp.buf.type_definition },
-         { '<space>d', vim.lsp.buf.hover},
-         { 'gi', '<cmd>Telescope lsp_implementations<cr>' },
-         { 'gr', '<cmd>Telescope lsp_references<cr>' },
+         { 'xx',       vim.lsp.buf.code_action,                           mode = { 'n', 'x' } },
+         { 'xf',       vim.lsp.buf.format },
+         { 'xr',       vim.lsp.buf.rename },
+         { 'gd',       vim.lsp.buf.definition },
+         { 'gt',       vim.lsp.buf.type_definition },
+         { '<space>d', vim.lsp.buf.hover },
+         { 'gi',       '<cmd>Telescope lsp_implementations<cr>' },
+         { 'gr',       '<cmd>Telescope lsp_references<cr>' },
          { 'g<space>', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>' },
       },
       event = "BufEnter",
@@ -27,11 +27,11 @@ return {
          cfg.pyright.setup {
             single_file_support = true,
          }
-         cfg.clangd.setup{
+         cfg.clangd.setup {
             single_file_support = true,
          }
          cfg.tsserver.setup {
-                        single_file_support = true,
+            single_file_support = true,
          }
          cfg.emmet_ls.setup {}
          cfg.lua_ls.setup {
@@ -40,7 +40,7 @@ return {
          cfg.ols.setup {}
          cfg.yamlls.setup {}
          cfg.solidity_ls.setup {}
-         cfg.html.setup{
+         cfg.html.setup {
             single_file_support = true,
          }
          -- cfg.nil_ls.setup {}
@@ -51,7 +51,7 @@ return {
    {
       'simrat39/rust-tools.nvim',
       event = "BufReadPre *.rs",
-      enabled = ture;
+      enabled = ture,
       keys = {
          { 'pm', function() require('rust-tools').parent_module.parent_module() end }
       },
@@ -80,7 +80,7 @@ return {
    },
    {
       'Maan2003/lsp_lines.nvim',
-      enabled = true;
+      enabled = true,
       event = "LspAttach",
       keys = {
          {

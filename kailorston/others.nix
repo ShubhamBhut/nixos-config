@@ -2,10 +2,10 @@
 
   home.packages = with pkgs; [
   pkgs.btop
-  pkgs.obsidian
   pkgs.tor
   pkgs.tor-browser-bundle-bin
   pkgs.jdk
+  pkgs.obsidian
   pkgs.unzip
   pkgs.brave
   pkgs.killall
