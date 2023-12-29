@@ -11,8 +11,5 @@
   pkgs.killall
   pkgs.exercism
   pkgs.scc
-  pkgs.shadowfox
-  pkgs.badwolf
-  pkgs.qutebrowser
   ];
 }
