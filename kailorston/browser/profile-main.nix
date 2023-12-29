@@ -86,7 +86,7 @@
     "layout.css.prefers-color-scheme.content-override" = 0;
     "layout.css.scroll-behavior.spring-constant" = "250";
 
-    # "extensions.VimFx.config_file_directory" = "${./.}";
+    "extensions.VimFx.config_file_directory" = "${./.}";
 
     "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
     "browser.startup.page" = 3; # restore
