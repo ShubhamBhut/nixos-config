@@ -219,8 +219,8 @@ c.tabs.show = 'never'
 
 # Setting default page for when opening new tabs or new windows with
 # commands like :open -t and :open -w .
-# c.url.default_page = 'https://distro.tube/'
-# c.url.start_pages = 'https://distro.tube/'
+c.url.default_page = 'file:///home/kailorston/nixos-config/kailorston/browser/qutebrowser/startpage/shubham/index.html'
+c.url.start_pages = ['file:///home/kailorston/nixos-config/kailorston/browser/qutebrowser/startpage/shubham/index.html']
 
 # Search engines which can be used via the address bar.  Maps a search
 # engine name (such as `DEFAULT`, or `ddg`) to a URL with a `{}`
@@ -240,7 +240,7 @@ c.tabs.show = 'never'
 # the search engine name to the search term, e.g. `:open google
 # qutebrowser`.
 # Type: Dict
-c.url.searchengines = {'DEFAULT': 'https://kagi.com/?q={}', 'dg': 'https://duckduckgo.com/?q={}', 'goog': 'https://www.google.com/search?q={}',  're': 'https://www.reddit.com/r/{}', 'wiki': 'https://en.wikipedia.org/wiki/{}', 'yt': 'https://www.youtube.com/results?search_query={}'}
+c.url.searchengines = {'DEFAULT': 'https://kagi.com/search?q={}', 'dg': 'https://duckduckgo.com/?q={}', 'goog': 'https://www.google.com/search?q={}',  're': 'https://www.reddit.com/r/{}', 'wiki': 'https://en.wikipedia.org/wiki/{}', 'yt': 'https://www.youtube.com/results?search_query={}'}
 
 # Text color of the completion widget. May be a single color to use for
 # all columns or a list of three colors, one for each column.

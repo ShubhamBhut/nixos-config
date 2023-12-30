@@ -86,6 +86,11 @@
   };
   boot.initrd.systemd.emergencyAccess = true;
 
+  # boot.kernelPatches = [{
+  #   name = "amdgpu-freezes";
+  #   patch = ./amdgpu-freezes.patch;
+  # }];
+  #
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
   ];
