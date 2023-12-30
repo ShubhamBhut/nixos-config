@@ -20,6 +20,9 @@ config.load_autoconfig(False)
 # Type: Dict
 c.aliases = {'q': 'quit', 'w': 'session-save', 'wq': 'quit --save'}
 
+# white gradient fix for youtube video
+c.content.user_stylesheets = "./css/yt_gradient_fix.css"
+
 # Setting dark mode
 config.set("colors.webpage.darkmode.enabled", True)
 
@@ -28,6 +31,27 @@ c.tabs.position = 'left'
 # c.tabs.title.format = "{index}"  # Display only tab index
 c.tabs.min_width = 75  # Adjust to your preference
 c.tabs.width = 150  # Adjust in pixels or percentage
+
+#adblock
+c.content.blocking.method = 'adblock'
+c.content.blocking.adblock.lists = [
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/legacy.txt",
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters.txt",
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2020.txt",
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2021.txt",
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2022.txt",
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2023.txt",
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/badware.txt",
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/privacy.txt",
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/badlists.txt",
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/annoyances.txt",
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/annoyances-cookies.txt",
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/annoyances-others.txt",
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/badlists.txt",
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/quick-fixes.txt",
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/resource-abuse.txt",
+        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/unbreak.txt"]
+
 
 # Which cookies to accept. With QtWebEngine, this setting also controls
 # other features with tracking capabilities similar to those of cookies;

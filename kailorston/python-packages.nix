@@ -21,4 +21,5 @@ pkgs.python311.withPackages (p: with p; [
   pyrituals
   black
   debugpy
+  adblock
 ])
