@@ -22,4 +22,6 @@ pkgs.python311.withPackages (p: with p; [
   black
   debugpy
   adblock
+  torchvision
+  jax
 ])
