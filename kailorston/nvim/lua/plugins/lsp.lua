@@ -46,12 +46,16 @@ return {
          -- cfg.nil_ls.setup {}
          -- cfg.denols.setup {}
          cfg.svelte.setup {}
+         cfg.julials.setup {
+            single_file_support = true,
+         }
+         cfg.ocamllsp.setup {}
       end,
    },
    {
       'simrat39/rust-tools.nvim',
       event = "BufReadPre *.rs",
-      enabled = ture,
+      enabled = true,
       keys = {
          { 'pm', function() require('rust-tools').parent_module.parent_module() end }
       },

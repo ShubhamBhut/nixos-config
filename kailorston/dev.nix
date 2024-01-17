@@ -19,6 +19,9 @@
     steam-run
     bitcoind
     julia
+    opam
+    ocaml
+    dune_3
   ];
   programs.helix.enable = true;
   programs.helix.settings = {

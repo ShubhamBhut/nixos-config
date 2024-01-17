@@ -11,6 +11,7 @@ pkgs.python311.withPackages (p: with p; [
   pandas # data analysis
   pylint # static checking
   pwntools
+  levenshtein
   requests # HTTP library
   setuptools # setup.py
   neo4j
@@ -23,5 +24,10 @@ pkgs.python311.withPackages (p: with p; [
   debugpy
   adblock
   torchvision
+  jaxlib
   jax
+  flax
+  equinox
+  faker
+  numba
 ])
