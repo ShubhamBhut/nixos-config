@@ -22,6 +22,8 @@
     opam
     ocaml
     dune_3
+    gnumake
+    bubblewrap
   ];
   programs.helix.enable = true;
   programs.helix.settings = {

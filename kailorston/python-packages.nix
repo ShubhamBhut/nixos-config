@@ -30,4 +30,5 @@ pkgs.python311.withPackages (p: with p; [
   equinox
   faker
   numba
+  networkx
 ])
