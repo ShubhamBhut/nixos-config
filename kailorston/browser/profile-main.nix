@@ -52,6 +52,11 @@
         definedAliases = [ "nw" ];
       };
 
+      "Youtube" = {
+        urls = [{ template = "https://www.youtube.com/results?search_query={searchTerms}"; }];
+        definedAliases = [ "yt" ];
+      };
+
       "Source Graph" = {
         urls = [{
           template = "https://sourcegraph.com/search";
