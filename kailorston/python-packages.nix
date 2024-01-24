@@ -23,11 +23,16 @@ pkgs.python311.withPackages (p: with p; [
   black
   debugpy
   adblock
+  # streamlit
+  redis
   torchvision
+  scikit-learn
   jaxlib
   jax
-  flax
+  # flax
   equinox
+  transformers
+  datasets
   faker
   numba
   networkx

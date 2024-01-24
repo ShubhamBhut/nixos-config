@@ -16,14 +16,16 @@
     pkgs.nodePackages.svelte-language-server
     typescript
     poetry
+    pipreqs
     steam-run
     bitcoind
-    julia
+    # julia
     opam
     ocaml
     dune_3
     gnumake
     bubblewrap
+    redis
   ];
   programs.helix.enable = true;
   programs.helix.settings = {
