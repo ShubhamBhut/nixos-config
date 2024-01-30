@@ -25,6 +25,10 @@ return {
       opts = {},
    },
    {
+      'tamton-aquib/mpv.nvim',
+      opts = {},
+   },
+   {
       'numToStr/Comment.nvim',
       opts = {},
    },
@@ -61,6 +65,19 @@ return {
       end,
    },
 
+   -- lazy.nvim
+   {
+      "folke/noice.nvim",
+      event = "VeryLazy",
+      opts = {
+         -- add any options here
+      },
+      dependencies = {
+         "MunifTanjim/nui.nvim",
+         "rcarriga/nvim-notify",
+      }
+   },
+
    {
       "chrisgrieser/nvim-various-textobjs",
       opts = { useDefaultKeymaps = true },
@@ -71,13 +88,13 @@ return {
       version = "v2.x",
       cmd = 'Neotree',
       keys = {
-      { "<leader>t", "<cmd>Neotree toggle<cr>", desc = "NeoTree" },
-    },
+         { "<leader>t", "<cmd>Neotree toggle<cr>", desc = "NeoTree" },
+      },
       dependencies = {
          "nvim-lua/plenary.nvim",
          "nvim-tree/nvim-web-devicons",
          "MunifTanjim/nui.nvim",
       }
-      
+
    }
 }

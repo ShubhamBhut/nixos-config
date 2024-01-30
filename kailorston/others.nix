@@ -11,5 +11,7 @@
   pkgs.killall
   pkgs.exercism
   pkgs.scc
+  pkgs.mpv
+  pkgs.youtube-dl
   ];
 }
