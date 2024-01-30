@@ -91,6 +91,7 @@
     "layout.css.prefers-color-scheme.content-override" = 0;
     "layout.css.scroll-behavior.spring-constant" = "250";
 
+    "browser.startup.homepage" = "file:///home/kailorston/src/nixos-config/kailorston/browser/startpage/shubham/index.html";
     "extensions.VimFx.config_file_directory" = "${./.}";
 
     "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
