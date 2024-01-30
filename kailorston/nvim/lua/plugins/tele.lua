@@ -29,8 +29,8 @@ return {
                },
                layout_config = {
                   horizontal = {
-                     width = 999,
-                     height = 999,
+                     -- width = 999,
+                     -- height = 999,
                      preview_width = 0.60,
                   },
                },

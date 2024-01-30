@@ -1,4 +1,4 @@
-{ pkgs, ff-addons }:
+{ff-addons }:
 {
   # isDefault = true;
   userChrome = builtins.readFile ./userChrome.css;
@@ -41,7 +41,6 @@
           ];
         }];
 
-        icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
         definedAliases = [ "np" ];
       };
 
