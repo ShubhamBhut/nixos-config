@@ -19,7 +19,7 @@
     pipreqs
     steam-run
     bitcoind
-    # julia
+    julia-bin
     opam
     ocaml
     dune_3

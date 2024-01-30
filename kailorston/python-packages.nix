@@ -25,6 +25,8 @@ pkgs.python311.withPackages (p: with p; [
   adblock
   # streamlit
   redis
+  flask
+  flask-caching
   torchvision
   scikit-learn
   jaxlib

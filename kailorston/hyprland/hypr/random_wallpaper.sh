@@ -2,7 +2,7 @@ set_wallpaper() {
 
     monitor="eDP-1"
 
-    wallpaper_dir="$HOME/Pictures/wallpapers/current"
+    wallpaper_dir="$HOME/src/nixos-config/kailorston/hyprland/wallpapers/current"
 
     files=($wallpaper_dir/*)
 
