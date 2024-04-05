@@ -81,6 +81,9 @@ require("lazy").setup("plugins", {
 })
 
 --background transparency toggle
+require("notify").setup({
+  background_colour = "#000000",
+})
 
 --colorscheme settings 
 local dracula = require("dracula")

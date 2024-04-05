@@ -4,6 +4,9 @@ return {
       'dcampos/nvim-snippy',
    },
    {
+      'gleam-lang/gleam.vim'
+   },
+   {
       'neovim/nvim-lspconfig',
       keys = {
          { 'xx',       vim.lsp.buf.code_action,                           mode = { 'n', 'x' } },
@@ -50,6 +53,7 @@ return {
             single_file_support = true,
          }
          cfg.ocamllsp.setup {}
+         cfg.gleam.setup {}
       end,
    },
    {

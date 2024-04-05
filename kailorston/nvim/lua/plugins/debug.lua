@@ -1,6 +1,10 @@
 vim.cmd [[autocmd FileType * set formatoptions-=o]]
 return {
     {
+        'nvim-neotest/nvim-nio',
+    },
+
+    {
         'mfussenegger/nvim-dap',
         config = function()
             vim.keymap.set("n", "<leader>dc", ":lua require'dap'.continue()<CR>", {}, "Continue")

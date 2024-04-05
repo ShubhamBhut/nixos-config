@@ -176,6 +176,7 @@
       };
       "custom/wall" = {
         # "on-click" = "${sharedScripts.wallpaper_random}/bin/wallpaper_random";
+        "on-click" = "sh ~/src/nixos-config/kailorston/hyprland/hypr/random_wallpaper.sh";
         # "on-click-middle" = "${sharedScripts.default_wall}/bin/default_wall";
         # "on-click-right" = "killall ${sharedScripts.dynamic_wallpaper}/bin/dynamic_wallpaper || ${sharedScripts.dynamic_wallpaper}/bin/dynamic_wallpaper &";
         "format" = " 󰠖 ";

@@ -1,0 +1,2 @@
+sudo nmcli device wifi hotspot con-name t-450 ssid t-450 band bg password qw3rtyu1
+sudo nmcli connection delete t-450

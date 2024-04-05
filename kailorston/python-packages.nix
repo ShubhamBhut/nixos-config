@@ -1,7 +1,12 @@
 { pkgs }:
 
 pkgs.python311.withPackages (p: with p; [
+  pyqt6
+  pytest
+  mutagen
+  flake8
   pip 
+  charset-normalizer
   aiohttp # async HTTP
   beautifulsoup4 # web scraping
   ipython # interactive shell

@@ -13,5 +13,6 @@
   pkgs.scc
   pkgs.mpv
   pkgs.youtube-dl
+  pkgs.picard
   ];
 }

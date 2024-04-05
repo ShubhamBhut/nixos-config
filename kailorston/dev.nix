@@ -3,12 +3,16 @@
 
   home.packages = with pkgs; [
     gcc
+    # libstdcxx5
     clang-tools
+    jujutsu
     gdb
     rustc
     cargo
     rustfmt
     clippy
+    erlang
+    gleam
     (import ./python-packages.nix { pkgs = pkgs; })
     pkgs.nodePackages.live-server
     nodejs_20

@@ -8,5 +8,5 @@
     source = ./.;
     recursive = true;
   };
-  home.packages = [pkgs.rust-analyzer pkgs.nodePackages.pyright pkgs.nodePackages_latest.typescript-language-server pkgs.nodePackages.vscode-langservers-extracted pkgs.lua-language-server pkgs.ocamlPackages.ocaml-lsp];
+  home.packages = [pkgs.rust-analyzer pkgs.nodePackages.pyright pkgs.nodePackages_latest.typescript-language-server pkgs.nodePackages.vscode-langservers-extracted pkgs.lua-language-server pkgs.ocamlPackages.ocaml-lsp pkgs.vimPlugins.nvim-treesitter-parsers.gleam];
   }

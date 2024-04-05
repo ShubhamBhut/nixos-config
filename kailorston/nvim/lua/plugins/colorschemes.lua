@@ -1,6 +1,9 @@
 vim.cmd [[autocmd FileType * set formatoptions-=o]]
 return {
     {
+        "fffnite/gleam-theme-nvim",
+    },
+    {
         "ellisonleao/gruvbox.nvim", priority = 1000,
         opts = {},
     },
