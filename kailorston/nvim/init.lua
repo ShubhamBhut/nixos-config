@@ -93,7 +93,7 @@ dracula.setup({
 )
 vim.g.nord_disable_background = true
 require('rose-pine').setup({
-	disable_background = true
+	disable_background = false
 })
 
 vim.cmd[[colorscheme rose-pine]]

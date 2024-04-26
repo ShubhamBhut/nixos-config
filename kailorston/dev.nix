@@ -3,6 +3,7 @@
 
   home.packages = with pkgs; [
     gcc
+    libsForQt5.full.out
     # libstdcxx5
     clang-tools
     jujutsu
