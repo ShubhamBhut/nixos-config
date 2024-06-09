@@ -5,6 +5,8 @@
     gcc
     libsForQt5.full.out
     # libstdcxx5
+    zed-editor
+    difftastic
     clang-tools
     jujutsu
     gdb

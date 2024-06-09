@@ -10,7 +10,7 @@
       ff-addons.inputs.nixpkgs.follows = "nixpkgs";
       nix-index-database.url = "github:Mic92/nix-index-database";
       nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
-      hyprland.url = "github:hyprwm/Hyprland";
+      hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
       legacy-fox = { url = "github:girst/LegacyFox-mirror-of-git.gir.st"; flake = false; };
     };
 

@@ -6,7 +6,7 @@
       bbenoist.nix
       bungcip.better-toml
       esbenp.prettier-vscode
-      matklad.rust-analyzer
+      rust-lang.rust-analyzer
       ms-pyright.pyright
       ms-toolsai.jupyter
     ];
