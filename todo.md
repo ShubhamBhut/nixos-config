@@ -3,7 +3,7 @@
 - [x] alacritty
 - [x] kitty
 - [x] emacs
-- [] firefox
+- [x] firefox
   - [ ] extensions auto update
 - [] dunst
 - [x] rofi

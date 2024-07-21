@@ -51,9 +51,7 @@
     cpu.amd.updateMicrocode = true;
     enableAllFirmware = true;
   };
-  hardware.amdgpu.opencl = {
-    enable = true;
-  };
+  hardware.amdgpu.opencl = false;
   console.font = lib.mkForce "${pkgs.terminus_font}/share/consolefonts/ter-u28n.psf.gz";
   environment.systemPackages = with pkgs; [ zenmonitor ryzenadj ];
   powerManagement.cpuFreqGovernor = "schedutil";

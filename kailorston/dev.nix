@@ -16,14 +16,13 @@
     clippy
     erlang
     gleam
+    godot_4
     (import ./python-packages.nix { pkgs = pkgs; })
     pkgs.nodePackages.live-server
     nodejs_20
     yarn
     pkgs.nodePackages.svelte-language-server
     typescript
-    poetry
-    pipreqs
     steam-run
     bitcoind
     julia-bin
