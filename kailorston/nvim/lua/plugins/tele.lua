@@ -31,7 +31,8 @@ return {
                   horizontal = {
                      -- width = 999,
                      -- height = 999,
-                     preview_width = 0.60,
+                     preview_cutoff = 0,
+                     preview_width = 0.65,
                   },
                },
             },
