@@ -12,7 +12,6 @@ vim.cmd([[
 
 
 --LSP
-
 -- keybindings
 
 -- quick normal mode

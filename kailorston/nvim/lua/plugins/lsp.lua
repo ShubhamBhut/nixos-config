@@ -21,6 +21,11 @@ return {
       },
       event = "BufEnter",
       config = function()
+         local gdscript_config = {
+            capabilities = capabilities,
+            settings = {},
+         }
+         require('lspconfig').gdscript.setup(gdscript_config)
          local cfg = require('lspconfig')
          -- cfg.clangd.setup {}
          cfg.rust_analyzer.setup {}
@@ -54,6 +59,7 @@ return {
          }
          cfg.ocamllsp.setup {}
          cfg.gleam.setup {}
+         cfg.gdscript.setup{}
       end,
    },
    {
