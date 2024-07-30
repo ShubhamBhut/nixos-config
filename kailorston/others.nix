@@ -10,8 +10,7 @@
   pkgs.brave
   pkgs.killall
   pkgs.exercism
-  pkgs.scc
-  pkgs.mpv
-  pkgs.picard
+  pkgs.scc #code language and complexity calculator
+  pkgs.mpv #audio and video player
   ];
 }

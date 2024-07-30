@@ -11,6 +11,7 @@
   ./nix.nix
   ../system/network
   ../system/battery_saver.nix
+  ../system/ollama.nix
     ];
 
   # Use the systemd-boot EFI boot loader.

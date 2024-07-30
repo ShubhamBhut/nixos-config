@@ -5,7 +5,7 @@
     gcc
     libsForQt5.full.out
     # libstdcxx5
-    zed-editor
+    # zed-editor
     difftastic
     clang-tools
     jujutsu
@@ -14,8 +14,8 @@
     cargo
     rustfmt
     clippy
-    erlang
-    gleam
+    # erlang
+    # gleam
     godot_4
     (import ./python-packages.nix { pkgs = pkgs; })
     pkgs.nodePackages.live-server
@@ -24,7 +24,7 @@
     pkgs.nodePackages.svelte-language-server
     typescript
     steam-run
-    bitcoind
+    # bitcoind
     julia-bin
     opam
     ocaml
