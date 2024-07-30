@@ -15,7 +15,6 @@
       ./nvim
       ./pentesting
       ./shell
-      ./dev.nix
       ./git.nix
       ./keepassxc.nix
       ./others.nix
