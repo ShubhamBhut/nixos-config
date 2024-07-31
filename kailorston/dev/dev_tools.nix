@@ -25,7 +25,7 @@
     typescript
     steam-run
     # bitcoind
-    julia-bin
+    # julia-bin
     opam
     ocaml
     dune_3
