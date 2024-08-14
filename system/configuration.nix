@@ -12,6 +12,7 @@
   ../system/network
   ../system/battery_saver.nix
   ../system/ollama.nix
+  ../kailorston/hedgedoc.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -37,7 +38,7 @@
   services.xserver.desktopManager.plasma5.enable = true;
   
   # Enable sound.
-  sound.enable = true;
+  # sound.enable = true; #nix update on Aug 2024 suggested to remove this
   hardware.pulseaudio.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
@@ -58,6 +59,7 @@
      neovim
      pkgs.nerdfonts
      (pkgs.callPackage ./pkgs/dellg5-fan.nix {})
+     inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
    ];
 
   # Open ports in the firewall.
@@ -97,4 +99,3 @@
   ];
 
 }
-

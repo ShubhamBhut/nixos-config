@@ -6,6 +6,7 @@
   pkgs.tor-browser-bundle-bin
   pkgs.jdk
   pkgs.obsidian
+  pkgs.hedgedoc
   pkgs.unzip
   pkgs.brave
   pkgs.killall

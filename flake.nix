@@ -12,6 +12,7 @@
       nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
       hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
       legacy-fox = { url = "github:girst/LegacyFox-mirror-of-git.gir.st"; flake = false; };
+       rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
     };
 
   outputs = { nixpkgs, ... }@inputs: {

@@ -19,7 +19,7 @@
     godot_4
     (import ./python-packages.nix { pkgs = pkgs; })
     pkgs.nodePackages.live-server
-    nodejs_20
+    nodejs_22
     yarn
     pkgs.nodePackages.svelte-language-server
     typescript
@@ -27,11 +27,12 @@
     # bitcoind
     # julia-bin
     opam
-    ocaml
     dune_3
     gnumake
     bubblewrap
     redis
+    sqlite
+    nginx
   ];
   programs.helix.enable = true;
   programs.helix.settings = {
