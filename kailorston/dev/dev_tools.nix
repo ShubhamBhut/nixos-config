@@ -3,6 +3,7 @@
 
   home.packages = with pkgs; [
     gcc
+    cmake
     libsForQt5.full.out
     # libstdcxx5
     # zed-editor
