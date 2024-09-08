@@ -13,5 +13,6 @@
   pkgs.exercism
   pkgs.scc #code language and complexity calculator
   pkgs.mpv #audio and video player
+  pkgs.libreoffice-fresh
   ];
 }
