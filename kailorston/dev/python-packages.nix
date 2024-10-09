@@ -3,9 +3,12 @@
 pkgs.python311.withPackages (p: with p; [
   pyqt6
   pytest
+  pyaudio
+  pyautogui
   mutagen
   flake8
   pip 
+  speechrecognition
   charset-normalizer
   aiohttp # async HTTP
   beautifulsoup4 # web scraping

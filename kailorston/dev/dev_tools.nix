@@ -34,6 +34,7 @@
     redis
     sqlite
     nginx
+    wtype
   ];
   programs.helix.enable = true;
   programs.helix.settings = {
