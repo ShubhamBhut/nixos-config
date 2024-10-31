@@ -16,5 +16,6 @@
   pkgs.mpv #audio and video player
   pkgs.libreoffice-fresh
   pkgs.vulnix
+  pkgs.logseq
   ];
 }
