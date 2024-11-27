@@ -37,8 +37,7 @@
   services.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
   
-  # Enable sound.
-  # sound.enable = true; #nix update on Aug 2024 suggested to remove this
+  # Enable sound with pulseaudio
   hardware.pulseaudio.enable = false;
 
   # Enable touchpad support (enabled default in most desktopManager).
