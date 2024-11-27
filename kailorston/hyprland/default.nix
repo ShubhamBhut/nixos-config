@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 {
 
-  home.packages = with pkgs; [ wl-clipboard slurp grim rofi brightnessctl mpd light cava hyprpaper swappy hyprcursor];
+  home.packages = with pkgs; [ wl-clipboard slurp grim rofi brightnessctl mpd light hyprpaper swappy hyprcursor];
   
 xdg.configFile.hypr = {
     source = ./hypr;

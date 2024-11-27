@@ -2,6 +2,7 @@
 { pkgs, config, ... }: {
 
   home.packages = with pkgs; [
+    aider-chat
     gcc
     cmake
     libsForQt5.full.out
@@ -11,6 +12,7 @@
     clang-tools
     jujutsu
     gdb
+    go
     rustc
     cargo
     rustfmt

@@ -39,7 +39,7 @@
   
   # Enable sound.
   # sound.enable = true; #nix update on Aug 2024 suggested to remove this
-  hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.enable = false;
 
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;

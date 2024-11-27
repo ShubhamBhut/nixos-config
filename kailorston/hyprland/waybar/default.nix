@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 {
 
-  home.packages = with pkgs; [ wl-clipboard slurp grim rofi brightnessctl mpd light cava];
+  home.packages = with pkgs; [ wl-clipboard slurp grim rofi brightnessctl mpd light ];
 
   programs.waybar = {
     enable = true;

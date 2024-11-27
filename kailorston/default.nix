@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }: {
+{ inputs, pkgs, lib, ... }: {
   imports = [ inputs.home-manager.nixosModules.home-manager ];
   home-manager.extraSpecialArgs = { inherit inputs; };
   home-manager.useGlobalPkgs = true;
@@ -22,6 +22,7 @@
     ];
     # home.packages = [ (pkgs.callPackage ./thunderbird-daily.nix {}) ];
     home.packages = [ (pkgs.callPackage ./magit {}) pkgs.thunderbird ];
+    manual.html.enable = false;
 
   };
  

@@ -60,6 +60,9 @@ return {
          cfg.ocamllsp.setup {}
          cfg.gleam.setup {}
          cfg.gdscript.setup{}
+         cfg.gopls.setup {
+            single_file_support = true,
+         }
       end,
    },
    {

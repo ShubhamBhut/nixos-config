@@ -42,6 +42,14 @@
     functions = {
       "a" = "set PATH (nix shell (string replace -r ^ nixpkgs# -- $argv) -c printenv PATH; or return)";
       "r" = "nix run nixpkgs#$argv";
+      "aider" = ''
+      command aider \
+        --model claude-3-5-sonnet-20241022 \
+        --code-theme solarized-dark \
+        --no-auto-commit \
+        --vim \
+        $argv
+    '';
     };
     shellAliases = {
       "j" = "just";
